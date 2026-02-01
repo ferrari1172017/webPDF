@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de inicio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .menu-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4a90e2;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Menú de inicio rápido</h1>
+
+  <div class="menu-buttons">
+    <button id="btnSplitPdf">Dividir PDF</button>
+    <button id="btnMergePdf">Combinar PDFs</button>
+    <button id="btnOther">Otra función</button>
+  </div>
+
+  <script>
+    // Redirecciones a módulos locales o páginas
+    document.getElementById("btnSplitPdf").onclick = () => {
+      window.location.href = "pdf web/index.html"; // tu módulo de dividir PDF
+    };
+
+    // document.getElementById("btnMergePdf").onclick = () => {
+    //   window.location.href = "merge.html"; // ejemplo de otro módulo
+    // };
+
+    // document.getElementById("btnOther").onclick = () => {
+    //   window.location.href = "other.html"; // otro módulo futuro
+    // };
+  </script>
+
+</body>
+</html>
